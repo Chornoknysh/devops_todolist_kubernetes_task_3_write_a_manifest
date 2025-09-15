@@ -6,7 +6,8 @@ metadata:
 spec:
   containers:
     - name: todoapp
-      image: <your-dockerhub-username>/todoapp:3.0.0
+      image: chornoknysh/todoapp:3.0.0
+      imagePullPolicy: Always
       ports:
         - containerPort: 8000
       readinessProbe:
